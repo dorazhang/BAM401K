@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="16490" started-at="2014-07-17T07:00:53Z" finished-at="2014-07-17T07:01:10Z">
+    <groups>
+      <group name="firefox">
+        <method signature="TC001_CreateNewProspect.newProspect()[pri:0, instance:com.testcase.TC001_CreateNewProspect@4104c575]" name="newProspect" class="com.testcase.TC001_CreateNewProspect"/>
+      </group> <!-- firefox -->
+    </groups>
+    <test name="Default test" duration-ms="16490" started-at="2014-07-17T07:00:53Z" finished-at="2014-07-17T07:01:10Z">
+      <class name="com.testcase.TC001_CreateNewProspect">
+        <test-method status="PASS" signature="setUpBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.testcase.TC001_CreateNewProspect@4104c575]" name="setUpBrowser" is-config="true" duration-ms="6830" started-at="2014-07-17T15:00:53Z" finished-at="2014-07-17T15:01:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="PASS" signature="newProspect()[pri:0, instance:com.testcase.TC001_CreateNewProspect@4104c575]" name="newProspect" duration-ms="7457" started-at="2014-07-17T15:01:00Z" finished-at="2014-07-17T15:01:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newProspect -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.TC001_CreateNewProspect@4104c575]" name="tearDown" is-config="true" duration-ms="2185" started-at="2014-07-17T15:01:08Z" finished-at="2014-07-17T15:01:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcase.TC001_CreateNewProspect -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

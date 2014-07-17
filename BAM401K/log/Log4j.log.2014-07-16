@@ -1,0 +1,70 @@
+[14/07/16 16:57:26][INFO][com.test.util.TestCaseBase-57] running TEST Case:com.testcase.TC001_CreateNewProspect
+[14/07/16 16:57:26][INFO][com.test.util.TestCaseBase-102] onGrid=false
+[14/07/16 16:57:26][INFO][com.test.util.TestCaseBase-103] browserFlag=firefox
+[14/07/16 16:57:33][INFO][com.test.util.TestCaseBase-317] Setting...filename=testdata_TC001_CreateNewProspect.properties
+[14/07/16 16:57:33][INFO][com.test.util.LogWebDriverEventListener-19] WebDriver navigating to:'http://h2500-0429l/BAM.Web401k.Web'
+[14/07/16 16:57:37][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (68a87377-a40c-42c0-8cea-f5adffe915fb)] -> xpath: //a[@class='btn btn-blue']]
+[14/07/16 17:26:46][INFO][com.test.util.TestCaseBase-57] running TEST Case:com.testcase.TC001_CreateNewProspect
+[14/07/16 17:26:46][INFO][com.test.util.TestCaseBase-102] onGrid=false
+[14/07/16 17:26:46][INFO][com.test.util.TestCaseBase-103] browserFlag=firefox
+[14/07/16 17:26:56][INFO][com.test.util.TestCaseBase-317] Setting...filename=testdata_TC001_CreateNewProspect.properties
+[14/07/16 17:26:56][INFO][com.test.util.LogWebDriverEventListener-19] WebDriver navigating to:'http://h2500-0429l/BAM.Web401k.Web'
+[14/07/16 17:27:01][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (73756d1d-fa0c-402c-88af-9e97307c3bf5)] -> xpath: //a[@class='btn btn-blue']]
+[14/07/16 17:27:04][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: plan from '' to 'Prospect001'
+[14/07/16 17:27:05][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: proposed from '' to 'TestUser01'
+[14/07/16 17:27:05][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: contact from '' to '123456'
+[14/07/16 17:27:05][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: address1 from '' to 'LongJing road'
+[14/07/16 17:27:05][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: address2 from '' to 'Zoo'
+[14/07/16 17:27:05][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: city from '' to 'New York'
+[14/07/16 17:27:05][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: zip from '' to '1234'
+[14/07/16 17:27:05][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: website from '' to 'www.123.com'
+[14/07/16 17:27:05][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: fax from '' to '123-123-123'
+[14/07/16 17:27:05][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: phone from '' to '123-123-123'
+[14/07/16 17:27:05][INFO][com.basepages.Prospectgeneralpage-73] data has been input!
+[14/07/16 17:27:05][INFO][com.test.util.Page-27] expected title=BAM Retirement Solutions
+[14/07/16 17:27:05][INFO][com.test.util.Page-28] actual title=BAM Retirement Solutions
+[14/07/16 18:55:20][INFO][com.test.util.TestCaseBase-57] running TEST Case:com.testcase.TC001_CreateNewProspect
+[14/07/16 18:55:20][INFO][com.test.util.TestCaseBase-102] onGrid=false
+[14/07/16 18:55:20][INFO][com.test.util.TestCaseBase-103] browserFlag=firefox
+[14/07/16 18:55:30][INFO][com.test.util.TestCaseBase-317] Setting...filename=testdata_TC001_CreateNewProspect.properties
+[14/07/16 18:55:30][INFO][com.test.util.LogWebDriverEventListener-19] WebDriver navigating to:'http://h2500-0429l/BAM.Web401k.Web'
+[14/07/16 18:55:33][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (f24a0441-98f3-40ce-ae4c-ffa3cfaf3006)] -> xpath: //a[@class='btn btn-blue']]
+[14/07/16 18:55:36][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: plan from '' to 'Prospect001'
+[14/07/16 18:55:37][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (f24a0441-98f3-40ce-ae4c-ffa3cfaf3006)] -> css selector: select#advisor]] -> xpath: .//option[normalize-space(.) = "Curtis Connors"]]
+[14/07/16 18:55:37][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (f24a0441-98f3-40ce-ae4c-ffa3cfaf3006)] -> css selector: select#state]] -> xpath: .//option[@value = "9"]]
+[14/07/16 18:55:38][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: proposed from '' to 'TestUser01'
+[14/07/16 18:55:38][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: contact from '' to '123456'
+[14/07/16 18:55:38][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: address1 from '' to 'LongJing road'
+[14/07/16 18:55:38][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: address2 from '' to 'Zoo'
+[14/07/16 18:55:38][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: city from '' to 'New York'
+[14/07/16 18:55:38][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: zip from '' to '1234'
+[14/07/16 18:55:38][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: website from '' to 'www.123.com'
+[14/07/16 18:55:38][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: fax from '' to '123-123-123'
+[14/07/16 18:55:38][INFO][com.test.util.LogWebDriverEventListener-29] WebDriver changing value in element found By.id: phone from '' to '123-123-123'
+[14/07/16 18:55:38][INFO][com.basepages.Prospectgeneralpage-78] data has been input!
+[14/07/16 18:55:38][INFO][com.test.util.Page-27] expected title=BAM Retirement Solutions
+[14/07/16 18:55:39][INFO][com.test.util.Page-28] actual title=BAM Retirement Solutions
+[14/07/16 19:46:53][INFO][com.test.util.TestCaseBase-57] running TEST Case:com.testcase.TC001_CreateNewProspect
+[14/07/16 19:46:53][INFO][com.test.util.TestCaseBase-102] onGrid=false
+[14/07/16 19:46:53][INFO][com.test.util.TestCaseBase-103] browserFlag=firefox
+[14/07/16 19:47:04][INFO][com.test.util.TestCaseBase-317] Setting...filename=testdata_TC001_CreateNewProspect.properties
+[14/07/16 19:47:04][INFO][com.test.util.LogWebDriverEventListener-19] WebDriver navigating to:'http://h2500-0429l/BAM.Web401k.Web'
+[14/07/16 19:47:13][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (791baf7a-f0c4-431c-b419-4abbf01911dd)] -> css selector: a.ico.delete.lightbox.prospectMarker]
+[14/07/16 19:47:13][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (791baf7a-f0c4-431c-b419-4abbf01911dd)] -> xpath: //a[@class='close']]
+[14/07/16 19:49:40][INFO][com.test.util.TestCaseBase-57] running TEST Case:com.testcase.TC001_CreateNewProspect
+[14/07/16 19:49:40][INFO][com.test.util.TestCaseBase-102] onGrid=false
+[14/07/16 19:49:40][INFO][com.test.util.TestCaseBase-103] browserFlag=firefox
+[14/07/16 19:49:48][INFO][com.test.util.TestCaseBase-317] Setting...filename=testdata_TC001_CreateNewProspect.properties
+[14/07/16 19:49:48][INFO][com.test.util.LogWebDriverEventListener-19] WebDriver navigating to:'http://h2500-0429l/BAM.Web401k.Web'
+[14/07/16 19:49:51][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (d7b06486-b7c6-4bd5-b5e4-1243c379e8e8)] -> css selector: a.ico.delete.lightbox.prospectMarker]
+[14/07/16 19:49:51][INFO][com.basepages.Loadingpage-62] Yes. DELETE.
+[14/07/16 19:49:51][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (d7b06486-b7c6-4bd5-b5e4-1243c379e8e8)] -> xpath: //a[@class='close']]
+[14/07/16 20:25:46][INFO][com.test.util.TestCaseBase-57] running TEST Case:com.testcase.TC001_CreateNewProspect
+[14/07/16 20:25:46][INFO][com.test.util.TestCaseBase-102] onGrid=false
+[14/07/16 20:25:46][INFO][com.test.util.TestCaseBase-103] browserFlag=firefox
+[14/07/16 20:25:57][INFO][com.test.util.TestCaseBase-317] Setting...filename=testdata_TC001_CreateNewProspect.properties
+[14/07/16 20:25:57][INFO][com.test.util.LogWebDriverEventListener-19] WebDriver navigating to:'http://h2500-0429l/BAM.Web401k.Web'
+[14/07/16 20:26:03][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (9e626076-574e-48b8-89db-8bf7eb28778a)] -> css selector: a.ico.delete.lightbox.prospectMarker]
+[14/07/16 20:26:04][INFO][com.basepages.Loadingpage-65] Yes. DELETE.
+[14/07/16 20:26:04][INFO][com.basepages.Loadingpage-66] You are about to delete this prospect from the list. Would like to proceed with this action?
+[14/07/16 20:26:04][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (9e626076-574e-48b8-89db-8bf7eb28778a)] -> xpath: //a[@class='close']]

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" name="Failed suite [Create New Prospect]">
+  <parameter name="browserFlagO" value="firefox"/>
+  <parameter name="runningOnGrid" value="false"/>
+  <parameter name="hubHost" value="localhost"/>
+  <parameter name="hubPort" value="4458"/>
+  <test name="create test - FF(failed)">
+    <parameter name="runningOnGrid" value="false"/>
+    <parameter name="browserFlagO" value="firefox"/>
+    <parameter name="hubHost" value="localhost"/>
+    <parameter name="hubPort" value="4458"/>
+    <groups>
+      <run>
+        <include name="firefox"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.testcase.TC001_CreateNewProspect">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpBrowser"/>
+          <include name="newProspect"/>
+        </methods>
+      </class> <!-- com.testcase.TC001_CreateNewProspect -->
+    </classes>
+  </test> <!-- create test - FF(failed) -->
+</suite> <!-- Failed suite [Create New Prospect] -->

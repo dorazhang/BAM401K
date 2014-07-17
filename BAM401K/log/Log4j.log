@@ -1,0 +1,478 @@
+[14/07/17 13:45:11][INFO][com.test.util.TestCaseBase-57] running TEST Case:com.testcase.TC001_CreateNewProspect
+[14/07/17 13:45:11][INFO][com.test.util.TestCaseBase-102] onGrid=false
+[14/07/17 13:45:11][INFO][com.test.util.TestCaseBase-103] browserFlag=firefox
+[14/07/17 13:45:20][INFO][com.test.util.TestCaseBase-317] Setting...filename=testdata_TC001_CreateNewProspect.properties
+[14/07/17 13:45:20][INFO][com.basepages.Loadingpage-83] expected result=SEARCH PROSPECTS:
+[14/07/17 13:45:20][ERROR][com.test.util.LogWebDriverEventListener-43] WebDriver error:
+org.openqa.selenium.InvalidSelectorException: The given selector //label[contains(text(),'SEARCH PROSPECTS:' is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //label[contains(text(),'SEARCH PROSPECTS:' because of the following error:
+[Exception... "The expression is not a legal expression."  code: "51" nsresult: "0x805b0033 (NS_ERROR_DOM_INVALID_EXPRESSION_ERR)"  location: "file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous7029195656148669069webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js Line: 5696"]
+Command duration or timeout: 32 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:53:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_41'
+Session ID: aa23c947-dcff-48f2-9f6c-a3f35c9c7bf1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=14.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:180)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy12.getText(Unknown Source)
+	at com.basepages.Loadingpage.textIs(Loadingpage.java:84)
+	at com.testcase.TC001_CreateNewProspect.newProspect(TC001_CreateNewProspect.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: The given selector //label[contains(text(),'SEARCH PROSPECTS:' is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //label[contains(text(),'SEARCH PROSPECTS:' because of the following error:
+[Exception... "The expression is not a legal expression."  code: "51" nsresult: "0x805b0033 (NS_ERROR_DOM_INVALID_EXPRESSION_ERR)"  location: "file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous7029195656148669069webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js Line: 5696"]
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:53:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_41'
+Driver info: driver.version: unknown
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous7029195656148669069webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8256)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous7029195656148669069webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8286)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous7029195656148669069webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8290)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous7029195656148669069webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10272)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous7029195656148669069webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10277)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous7029195656148669069webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10217)
+[14/07/17 13:46:47][INFO][com.test.util.TestCaseBase-57] running TEST Case:com.testcase.TC001_CreateNewProspect
+[14/07/17 13:46:47][INFO][com.test.util.TestCaseBase-102] onGrid=false
+[14/07/17 13:46:47][INFO][com.test.util.TestCaseBase-103] browserFlag=firefox
+[14/07/17 13:46:53][INFO][com.test.util.TestCaseBase-317] Setting...filename=testdata_TC001_CreateNewProspect.properties
+[14/07/17 13:46:53][INFO][com.test.util.LogWebDriverEventListener-19] WebDriver navigating to:'http://h2500-0429l/BAM.Web401k.Web'
+[14/07/17 13:47:05][ERROR][com.test.util.LogWebDriverEventListener-41] WebDriver error: Element not found By.selector: a.ico.delete.lightbox.prospectMarker
+[14/07/17 13:47:09][ERROR][com.test.util.LogWebDriverEventListener-41] WebDriver error: Element not found By.selector: a.ico.delete.lightbox.prospectMarker
+[14/07/17 13:47:13][ERROR][com.test.util.LogWebDriverEventListener-41] WebDriver error: Element not found By.selector: a.ico.delete.lightbox.prospectMarker
+[14/07/17 13:47:16][ERROR][com.test.util.LogWebDriverEventListener-41] WebDriver error: Element not found By.selector: a.ico.delete.lightbox.prospectMarker
+[14/07/17 13:47:20][ERROR][com.test.util.LogWebDriverEventListener-43] WebDriver error:
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:53:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_41'
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:396)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:407)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:180)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$1(ExpectedConditions.java:170)
+	at org.openqa.selenium.support.ui.ExpectedConditions$5.apply(ExpectedConditions.java:156)
+	at org.openqa.selenium.support.ui.ExpectedConditions$5.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.test.util.Waiting.until(Waiting.java:44)
+	at com.basepages.Loadingpage.deleteProspect(Loadingpage.java:65)
+	at com.testcase.TC001_CreateNewProspect.newProspect(TC001_CreateNewProspect.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:7055 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:334)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	... 46 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	... 56 more
+[14/07/17 13:47:21][ERROR][com.test.util.LogWebDriverEventListener-43] WebDriver error:
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:53:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_41'
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:423)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy10.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:194)
+	at com.test.util.TestCaseBase.tearDown(TestCaseBase.java:220)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:7055 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	... 36 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	... 46 more
+[14/07/17 13:49:16][INFO][com.test.util.TestCaseBase-57] running TEST Case:com.testcase.TC001_CreateNewProspect
+[14/07/17 13:49:16][INFO][com.test.util.TestCaseBase-102] onGrid=false
+[14/07/17 13:49:16][INFO][com.test.util.TestCaseBase-103] browserFlag=firefox
+[14/07/17 13:49:23][INFO][com.test.util.TestCaseBase-317] Setting...filename=testdata_TC001_CreateNewProspect.properties
+[14/07/17 13:49:23][INFO][com.test.util.LogWebDriverEventListener-19] WebDriver navigating to:'http://h2500-0429l/Stable'
+[14/07/17 13:49:26][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (ca6e2b4b-f329-4011-a736-ed7df7aab23f)] -> css selector: a.ico.delete.lightbox.prospectMarker]
+[14/07/17 13:49:26][INFO][com.basepages.Loadingpage-68] Yes. DELETE.
+[14/07/17 13:49:26][INFO][com.basepages.Loadingpage-69] You are about to delete this prospect from the list. Would like to proceed with this action?
+[14/07/17 13:49:26][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (ca6e2b4b-f329-4011-a736-ed7df7aab23f)] -> xpath: //a[@class='close']]
+[14/07/17 13:49:27][INFO][com.basepages.Loadingpage-83] expected result=SEARCH PROSPECTS:
+[14/07/17 13:49:27][ERROR][com.test.util.LogWebDriverEventListener-43] WebDriver error:
+org.openqa.selenium.InvalidSelectorException: The given selector //label[contains(text(),'SEARCH PROSPECTS:' is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //label[contains(text(),'SEARCH PROSPECTS:' because of the following error:
+[Exception... "The expression is not a legal expression."  code: "51" nsresult: "0x805b0033 (NS_ERROR_DOM_INVALID_EXPRESSION_ERR)"  location: "file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous6473544007138570622webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js Line: 5696"]
+Command duration or timeout: 17 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:53:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_41'
+Session ID: ca6e2b4b-f329-4011-a736-ed7df7aab23f
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=14.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:180)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy12.getText(Unknown Source)
+	at com.basepages.Loadingpage.textIs(Loadingpage.java:84)
+	at com.testcase.TC001_CreateNewProspect.newProspect(TC001_CreateNewProspect.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: The given selector //label[contains(text(),'SEARCH PROSPECTS:' is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //label[contains(text(),'SEARCH PROSPECTS:' because of the following error:
+[Exception... "The expression is not a legal expression."  code: "51" nsresult: "0x805b0033 (NS_ERROR_DOM_INVALID_EXPRESSION_ERR)"  location: "file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous6473544007138570622webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js Line: 5696"]
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:53:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_41'
+Driver info: driver.version: unknown
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous6473544007138570622webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8256)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous6473544007138570622webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8286)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous6473544007138570622webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8290)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous6473544007138570622webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10272)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous6473544007138570622webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10277)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous6473544007138570622webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10217)
+[14/07/17 13:51:22][INFO][com.test.util.TestCaseBase-57] running TEST Case:com.testcase.TC001_CreateNewProspect
+[14/07/17 13:51:22][INFO][com.test.util.TestCaseBase-102] onGrid=false
+[14/07/17 13:51:22][INFO][com.test.util.TestCaseBase-103] browserFlag=firefox
+[14/07/17 13:51:29][INFO][com.test.util.TestCaseBase-317] Setting...filename=testdata_TC001_CreateNewProspect.properties
+[14/07/17 13:51:29][INFO][com.test.util.LogWebDriverEventListener-19] WebDriver navigating to:'http://h2500-0429l/Stable'
+[14/07/17 13:51:33][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (4c8950ec-9c42-4c18-9048-40486155fa9d)] -> css selector: a.ico.delete.lightbox.prospectMarker]
+[14/07/17 13:51:33][INFO][com.basepages.Loadingpage-68] Yes. DELETE.
+[14/07/17 13:51:34][INFO][com.basepages.Loadingpage-69] You are about to delete this prospect from the list. Would like to proceed with this action?
+[14/07/17 13:51:34][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (4c8950ec-9c42-4c18-9048-40486155fa9d)] -> xpath: //a[@class='close']]
+[14/07/17 13:51:34][INFO][com.basepages.Loadingpage-83] expected result=SEARCH PROSPECTS:
+[14/07/17 13:51:34][INFO][com.basepages.Loadingpage-84] actual result=SEARCH PROSPECTS:
+[14/07/17 14:37:51][INFO][com.test.util.TestCaseBase-57] running TEST Case:com.testcase.TC001_CreateNewProspect
+[14/07/17 14:37:51][INFO][com.test.util.TestCaseBase-102] onGrid=false
+[14/07/17 14:37:51][INFO][com.test.util.TestCaseBase-103] browserFlag=firefox
+[14/07/17 14:38:00][INFO][com.test.util.TestCaseBase-317] Setting...filename=testdata_TC001_CreateNewProspect.properties
+[14/07/17 14:38:00][INFO][com.test.util.LogWebDriverEventListener-19] WebDriver navigating to:'http://h2500-0429l/Stable'
+[14/07/17 14:38:04][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (8bc779e8-cc4d-41b5-8fdd-6acc8942caaf)] -> xpath: //a[@class='btn btn-blue']]
+[14/07/17 14:39:21][INFO][com.test.util.TestCaseBase-57] running TEST Case:com.testcase.TC001_CreateNewProspect
+[14/07/17 14:39:21][INFO][com.test.util.TestCaseBase-102] onGrid=false
+[14/07/17 14:39:21][INFO][com.test.util.TestCaseBase-103] browserFlag=firefox
+[14/07/17 14:39:29][INFO][com.test.util.TestCaseBase-317] Setting...filename=testdata_TC001_CreateNewProspect.properties
+[14/07/17 14:39:29][INFO][com.test.util.LogWebDriverEventListener-19] WebDriver navigating to:'http://h2500-0429l/Stable'
+[14/07/17 14:39:32][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> xpath: //a[@class='btn btn-blue']]
+[14/07/17 14:39:35][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:36][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:36][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:36][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:36][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:36][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:37][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:37][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:37][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:37][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:37][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:38][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:38][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:38][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:38][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:39][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:39][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:39][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:39][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:40][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:40][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:40][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:40][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:41][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:41][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:41][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:41][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:41][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:42][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:42][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:42][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:42][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:42][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:43][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:43][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:43][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:43][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:44][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:44][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:44][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:44][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:44][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:45][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:45][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:45][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:45][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:45][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:46][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:46][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:46][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:46][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:39:46][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[[[FirefoxDriver: firefox on XP (4af781bb-732d-444e-bc18-73e05261bd8c)] -> css selector: select#state]] -> tag name: option]
+[14/07/17 14:52:09][INFO][com.test.util.TestCaseBase-57] running TEST Case:com.testcase.TC001_CreateNewProspect
+[14/07/17 14:52:09][INFO][com.test.util.TestCaseBase-102] onGrid=false
+[14/07/17 14:52:09][INFO][com.test.util.TestCaseBase-103] browserFlag=firefox
+[14/07/17 14:52:16][INFO][com.test.util.TestCaseBase-317] Setting...filename=testdata_TC001_CreateNewProspect.properties
+[14/07/17 14:52:16][INFO][com.test.util.LogWebDriverEventListener-19] WebDriver navigating to:'http://h2500-0429l/Stable'
+[14/07/17 14:52:20][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (716fd662-642a-48bd-b299-d53d7dfa8ebb)] -> css selector: a.ico.delete.lightbox.prospectMarker]
+[14/07/17 14:52:20][INFO][com.basepages.Loadingpage-78] Yes. DELETE.
+[14/07/17 14:52:20][INFO][com.basepages.Loadingpage-79] You are about to delete this prospect from the list. Would like to proceed with this action?
+[14/07/17 14:52:20][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (716fd662-642a-48bd-b299-d53d7dfa8ebb)] -> xpath: //a[@class='close']]
+[14/07/17 14:52:20][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (716fd662-642a-48bd-b299-d53d7dfa8ebb)] -> css selector: a.ico.create.lightbox.prospectMarker]
+[14/07/17 14:52:21][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (716fd662-642a-48bd-b299-d53d7dfa8ebb)] -> css selector: a.close]
+[14/07/17 14:58:07][INFO][com.test.util.TestCaseBase-57] running TEST Case:com.testcase.TC001_CreateNewProspect
+[14/07/17 14:58:07][INFO][com.test.util.TestCaseBase-102] onGrid=false
+[14/07/17 14:58:07][INFO][com.test.util.TestCaseBase-103] browserFlag=firefox
+[14/07/17 14:58:14][INFO][com.test.util.TestCaseBase-317] Setting...filename=testdata_TC001_CreateNewProspect.properties
+[14/07/17 14:58:14][INFO][com.test.util.LogWebDriverEventListener-19] WebDriver navigating to:'http://h2500-0429l/Stable'
+[14/07/17 14:58:19][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (ff881547-dd91-4bce-aadb-8a702178d1eb)] -> css selector: a.ico.delete.lightbox.prospectMarker]
+[14/07/17 14:58:19][INFO][com.basepages.Loadingpage-78] Yes. DELETE.
+[14/07/17 14:58:19][INFO][com.basepages.Loadingpage-79] You are about to delete this prospect from the list. Would like to proceed with this action?
+[14/07/17 14:58:19][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (ff881547-dd91-4bce-aadb-8a702178d1eb)] -> xpath: //a[@class='close']]
+[14/07/17 14:58:20][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (ff881547-dd91-4bce-aadb-8a702178d1eb)] -> css selector: a.ico.create.lightbox.prospectMarker]
+[14/07/17 14:58:20][ERROR][com.test.util.LogWebDriverEventListener-43] WebDriver error:
+org.openqa.selenium.InvalidSelectorException: The given selector //p[contains(text(),'You are about to create your experience for this prospect. Would like to proceed with this action?'] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //p[contains(text(),'You are about to create your experience for this prospect. Would like to proceed with this action?'] because of the following error:
+[Exception... "The expression is not a legal expression."  code: "51" nsresult: "0x805b0033 (NS_ERROR_DOM_INVALID_EXPRESSION_ERR)"  location: "file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous8196027377727477399webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js Line: 5696"]
+Command duration or timeout: 39 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:53:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_41'
+Session ID: ff881547-dd91-4bce-aadb-8a702178d1eb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=14.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:180)
+	at com.basepages.Loadingpage.createExperience(Loadingpage.java:89)
+	at com.testcase.TC001_CreateNewProspect.newProspect(TC001_CreateNewProspect.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: The given selector //p[contains(text(),'You are about to create your experience for this prospect. Would like to proceed with this action?'] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //p[contains(text(),'You are about to create your experience for this prospect. Would like to proceed with this action?'] because of the following error:
+[Exception... "The expression is not a legal expression."  code: "51" nsresult: "0x805b0033 (NS_ERROR_DOM_INVALID_EXPRESSION_ERR)"  location: "file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous8196027377727477399webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js Line: 5696"]
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:53:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_41'
+Driver info: driver.version: unknown
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous8196027377727477399webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8256)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous8196027377727477399webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8286)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous8196027377727477399webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8290)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous8196027377727477399webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10272)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous8196027377727477399webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10277)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/DORA~1.ZHA/AppData/Local/Temp/anonymous8196027377727477399webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10217)
+[14/07/17 15:00:53][INFO][com.test.util.TestCaseBase-57] running TEST Case:com.testcase.TC001_CreateNewProspect
+[14/07/17 15:00:53][INFO][com.test.util.TestCaseBase-102] onGrid=false
+[14/07/17 15:00:53][INFO][com.test.util.TestCaseBase-103] browserFlag=firefox
+[14/07/17 15:01:00][INFO][com.test.util.TestCaseBase-317] Setting...filename=testdata_TC001_CreateNewProspect.properties
+[14/07/17 15:01:00][INFO][com.test.util.LogWebDriverEventListener-19] WebDriver navigating to:'http://h2500-0429l/Stable'
+[14/07/17 15:01:06][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (1147f7aa-36f2-4a8d-bdc2-530270fbe482)] -> css selector: a.ico.delete.lightbox.prospectMarker]
+[14/07/17 15:01:07][INFO][com.basepages.Loadingpage-81] Yes. DELETE.
+[14/07/17 15:01:07][INFO][com.basepages.Loadingpage-82] You are about to delete this prospect from the list. Would like to proceed with this action?
+[14/07/17 15:01:07][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (1147f7aa-36f2-4a8d-bdc2-530270fbe482)] -> xpath: //a[@class='close']]
+[14/07/17 15:01:07][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (1147f7aa-36f2-4a8d-bdc2-530270fbe482)] -> css selector: a.ico.create.lightbox.prospectMarker]
+[14/07/17 15:01:07][INFO][com.test.util.LogWebDriverEventListener-54] WebDriver clicking on[[FirefoxDriver: firefox on XP (1147f7aa-36f2-4a8d-bdc2-530270fbe482)] -> css selector: a.close]
