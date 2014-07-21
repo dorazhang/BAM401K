@@ -3,14 +3,9 @@
     <property name="output.dir" value="${base.dir}/test-output"/>
     <property name="lib.dir" value="${base.dir}/lib"/>
 	<property name="testdata.dir" value="${base.dir}/testdata"/>
-    <property name="testng.file.all" value="JiraTest.xml"/>
     <property name="testng.file.percentage" value="testng_google_test_percentage_mode.xml"/>
-	<property name="testng.file.random" value="testng_google_test_random_mode.xml"/>
-	<property name="testng.file.parallel" value="suite-parallel-test.xml"/>
-	<property name="user" value="helen.xiang" />
-		<property name="pwd" value="8p7JuKay@10" />
-		<property name="machine160" value="java -jar C:/selenium-server-standalone-2.31.0.jar -role node  -trustAllSSLCertificates -nodeConfig c:/selenium-grid-node-config.json  " />
-
+	<property name="testng.bam.401k" value="testng.xml"/>
+	
 		 <target name="bootstrap" description="Install missing jars">
 	    <mkdir dir="${user.home}/.ant/lib"/>
 	    <get src="http://search.maven.org/remotecontent?filepath=com/jcraft/jsch/0.1.48/jsch-0.1.48.jar" dest="${user.home}/.ant/lib/jsch.jar"/>
@@ -85,6 +80,13 @@
         </testng>
     </target>
 	
+	<target name="run_tests" depends="compile">
+		<delete dir="${output.dir}"/>
+		<testng outputdir="${output.dir}" classpathref="classes" delegateCommandSystemProperties="true">
+	            <xmlfileset dir="${base.dir}" includes="${testng.bam.401k}"/>
+	        </testng>
+	    </target>
+	
 	
 	    <target name="test_browser_percentage_specified" depends="compile">
 	<delete dir="${output.dir}"/>
@@ -93,7 +95,7 @@
         </testng>
     </target>
 	
-	<target name="test_parallel" depends="startnodes" >
+	<target name="6" depends="startnodes" >
 	<delete dir="${output.dir}"/>
 	<testng outputdir="${output.dir}" classpathref="classes" delegateCommandSystemProperties="true">
             <xmlfileset dir="${base.dir}" includes="${testng.file.parallel}"/>
