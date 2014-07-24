@@ -1,9 +1,8 @@
-<project basedir="." default="test_all_browser" name="automation test">
+<project basedir="." default="run_tests" name="automation test">
 <property name="base.dir" value="."/>
     <property name="output.dir" value="${base.dir}/test-output"/>
     <property name="lib.dir" value="${base.dir}/lib"/>
 	<property name="testdata.dir" value="${base.dir}/testdata"/>
-    <property name="testng.file.percentage" value="testng_google_test_percentage_mode.xml"/>
 	<property name="testng.bam.401k" value="testng.xml"/>
 	
 		 <target name="bootstrap" description="Install missing jars">
@@ -66,19 +65,9 @@
 	</target>
 	
 	
-    <target name="test_all_browser" depends="compile">
-	<delete dir="${output.dir}"/>
-	<testng outputdir="${output.dir}" classpathref="classes" delegateCommandSystemProperties="true">
-            <xmlfileset dir="${base.dir}" includes="${testng.file.all}"/>
-        </testng>
-    </target>
+    
 	
-	<target name="test_random_browser" depends="compile">
-	<delete dir="${output.dir}"/>
-	<testng outputdir="${output.dir}" classpathref="classes" delegateCommandSystemProperties="true">
-            <xmlfileset dir="${base.dir}" includes="${testng.file.random}"/>
-        </testng>
-    </target>
+	
 	
 	<target name="run_tests" depends="compile">
 		<delete dir="${output.dir}"/>
@@ -88,12 +77,7 @@
 	    </target>
 	
 	
-	    <target name="test_browser_percentage_specified" depends="compile">
-	<delete dir="${output.dir}"/>
-	<testng outputdir="${output.dir}" classpathref="classes" delegateCommandSystemProperties="true">
-            <xmlfileset dir="${base.dir}" includes="${testng.file.percentage}"/>
-        </testng>
-    </target>
+	   
 	
 	<target name="6" depends="startnodes" >
 	<delete dir="${output.dir}"/>
