@@ -5,6 +5,7 @@ import java.util.Properties;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -63,21 +64,35 @@ public class Prospectgeneralpage extends Page {
 	
 	public  void createNew(){	
 		
+		//assert(planName.getSize().equals(0));
+		
+		Assert.assertTrue(planName.getAttribute("value").equals(""));
 		planName.sendKeys(plan);
+		//System.out.println(planName.getAttribute("value").trim());
 		Select selectAdvisor = new Select(advisor);
 		selectAdvisor.selectByVisibleText("Curtis Connors");
 		Select selectState = new Select(state);
-		selectState.selectByValue("9");		
+		selectState.selectByValue("9");	
+		Assert.assertTrue(proposedRecordKeeper.getAttribute("value").equals(""));
 		proposedRecordKeeper.sendKeys(recordKeeper);
+		Assert.assertTrue(contactbox.getAttribute("value").equals(""));
 		contactbox.sendKeys(contact);
+		Assert.assertTrue(address1box.getAttribute("value").equals(""));
 		address1box.sendKeys(address1);
+		Assert.assertTrue(address2box.getAttribute("value").equals(""));
 		address2box.sendKeys(address2);
+		Assert.assertTrue(citybox.getAttribute("value").equals(""));
 		citybox.sendKeys(city);
+		Assert.assertTrue(zipbox.getAttribute("value").equals(""));
 		zipbox.sendKeys(zip);
+		Assert.assertTrue(websitebox.getAttribute("value").equals(""));
 		websitebox.sendKeys(website);
+		Assert.assertTrue(faxbox.getAttribute("value").equals(""));
 		faxbox.sendKeys(fax);
+		Assert.assertTrue(phonebox.getAttribute("value").equals(""));
 		phonebox.sendKeys(phone);
-		log.info("data has been input!");		
+		log.info("data has been input!");	
+		
 		
 	}
 	
@@ -89,12 +104,22 @@ public class Prospectgeneralpage extends Page {
 			System.out.println("this option's text is "+option.getText());
 			option.click();
 		}
-		
-		
-		
-		
+				
 	}
 
-
+	@FindBy(xpath="//*[@id='mainForm']/div/ul/li[2]/a")
+	WebElement planDetail;
+	
+ public void clickPlandetail(){
+	 planDetail.click();
+	 	 
+ }
+ 
+ @FindBy(xpath="//*[@id='mainForm']/div/ul/li[3]/a")
+ WebElement clickFirm;
+ public void clickFirm(){
+	 clickFirm.click();
+	 	 
+ }
 
 }

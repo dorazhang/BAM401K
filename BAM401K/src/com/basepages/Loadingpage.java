@@ -1,5 +1,6 @@
 package com.basepages;
 
+import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.logging.Log;
@@ -11,6 +12,7 @@ import org.testng.annotations.Test;
 
 import com.test.util.FunctionUtil;
 import com.test.util.Page;
+import com.test.util.ReuseableMethods;
 import com.test.util.SystemUtil;
 import com.test.util.TestCaseBase;
 import com.test.util.Waiting;
@@ -40,14 +42,15 @@ public class Loadingpage extends Page{
 	
 	@FindBy(xpath="//label[@for='keyword']")
 	WebElement searchLable;
-	@FindBy(css="input.search-prospect.k-input.text-active")
-	WebElement searchbox;
+	
 	@FindBy(xpath="span[@data-id='2']")
 	WebElement peiDui1;
 	@FindBy(xpath="span[@data-id='3']")
 	WebElement peiDui2;
 	@FindBy(css="a.ico.create.lightbox.prospectMarker")
 	WebElement createExperienceButton1;
+	@FindBy(css="a.close")
+	WebElement createExperiencedismiss;
 	
 	
 	
@@ -58,13 +61,13 @@ public class Loadingpage extends Page{
 
 	
 	public void clickButton(){
-		TestCaseBase.threadDriver.get().navigate().to(url);
-		System.out.println("navigation successfully!");
-		TestCaseBase.threadDriver.get().manage().window().maximize();
-		Waiting.implicitly(30);
+		//TestCaseBase.threadDriver.get().navigate().to(url);
+		//System.out.println("navigation successfully!");
+		//TestCaseBase.threadDriver.get().manage().window().maximize();
+		//Waiting.implicitly(30);
 		//Waiting.until(button);
-		System.out.println("found button successfully!");
-		System.out.println(button.isDisplayed());
+		//System.out.println("found button successfully!");
+		//System.out.println(button.isDisplayed());
 		//((JavascriptExecutor) TestCaseBase.threadDriver.get()).executeScript("document.getElementById('searchByLocButton').click();");
 		button.click();	
 //		return new Prospectgeneralpage();
@@ -76,21 +79,23 @@ public class Loadingpage extends Page{
 		System.out.println("navigation successfully!");
 		TestCaseBase.threadDriver.get().manage().window().maximize();
 		Waiting.until(deletebutton1);
-		deletebutton1.click();
-		FunctionUtil.switchToNewWindow();
+		//deletebutton1.click();
+		//FunctionUtil.switchToNewWindow();
+		ReuseableMethods.deleteExperienceFunctionNo(deletebutton1, dismissbutton);
 		log.info(delete.getText());
 		log.info(text.getText());
-		dismissbutton.click();		
+		//dismissbutton.click();		
 		
 		
 	}
 	
 	public void createExperience(){
-		createExperienceButton1.click();
+		ReuseableMethods.deleteExperienceFunctionNo(createExperienceButton1, createExperiencedismiss);
+		//createExperienceButton1.click();
 		System.out.println("label of the button is "+createExperienceButton1.getText());
-		FunctionUtil.switchToNewWindow();
-		System.out.println(TestCaseBase.threadDriver.get().findElement(By.xpath("//p[contains(text(),'You are about to create your experience for this prospect. Would like to proceed with this action?')]")).getText());
-		TestCaseBase.threadDriver.get().findElement(By.cssSelector("a.close")).click();
+		//FunctionUtil.switchToNewWindow();
+		//System.out.println(TestCaseBase.threadDriver.get().findElement(By.xpath("//p[contains(text(),'You are about to create your experience for this prospect. Would like to proceed with this action?')]")).getText());
+		//TestCaseBase.threadDriver.get().findElement(By.cssSelector("a.close")).click();
 		
 		
 		
@@ -112,6 +117,7 @@ public class Loadingpage extends Page{
 //		
 //		log.info("expected result="+ peiDui1.getText() );
 //		log.info("actual result="+ peiDui2.getText());
+//return(
 //		
 //		
 //	}
@@ -123,17 +129,21 @@ public class Loadingpage extends Page{
 		return (searchLable.getText().equals(text));
 	}
 	
-	public void searchFunction(){
-		searchbox.sendKeys("prospect");
+	@FindBy(xpath="//div[@id='searchProspect-list']")
+	WebElement searchProspectlist;
+	@FindBy(css="input#searchProspect")
+	WebElement searchbox;
+	public void searchFunction(String text){
+		//TestCaseBase.threadDriver.get().navigate().to(url);
+		//Waiting.until(searchbox);;
+		searchbox.sendKeys(text);
 		Waiting.implicitly();
-		
-		
-		
-		
-		
-		
-		
-		
+		List<WebElement> alllists = searchProspectlist.findElements(By.tagName("li"));
+		for(WebElement li : alllists){
+			System.out.println("expected result="+text);
+			System.out.println("actual result="+li.getText());
+			assert(li.getText().contains(text));
+		}
 	}
 
 }
