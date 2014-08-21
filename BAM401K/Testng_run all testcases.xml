@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testng_run all testcases" parallel="false" thread-count="1"
+	configfailurepolicy="continue">
+	<test name="create test - FF">
+		<parameter name="browserFlagO" value="firefox" />
+		<parameter name="runningOnGrid" value="false" />
+		<parameter name="hubHost" value="localhost" />
+		<parameter name="hubPort" value="4458" />
+		<groups>
+			<run>
+				<include name="firefox" />
+				<include name="checkfirst"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testcase.TC01_FunctionOnLoadingPage" />
+			<class name="com.testcase.TC02_CreateNewProspect" />
+			<class name="com.testcase.TC03_ConvertToPlan" />
+		</classes>
+	</test>
+</suite>
